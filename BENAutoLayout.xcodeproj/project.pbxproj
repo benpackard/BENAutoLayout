@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		C56E7B6418FAD1E10035E01D /* UIView+Constraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraints.h"; sourceTree = "<group>"; };
-		C56E7B6518FAD1E10035E01D /* UIView+Constraints.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraints.m"; sourceTree = "<group>"; };
+		C56E7B6618FAD7170035E01D /* UIView+Constraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIView+Constraints.h"; path = "BENAutoLayout/UIView+Constraints.h"; sourceTree = "<group>"; };
+		C56E7B6718FAD7170035E01D /* UIView+Constraints.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIView+Constraints.m"; path = "BENAutoLayout/UIView+Constraints.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		C56E7B5D18FAD1BD0035E01D = {
 			isa = PBXGroup;
 			children = (
-				C56E7B6418FAD1E10035E01D /* UIView+Constraints.h */,
-				C56E7B6518FAD1E10035E01D /* UIView+Constraints.m */,
+				C56E7B6618FAD7170035E01D /* UIView+Constraints.h */,
+				C56E7B6718FAD7170035E01D /* UIView+Constraints.m */,
 			);
 			sourceTree = "<group>";
 		};
