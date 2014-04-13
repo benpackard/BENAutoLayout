@@ -12,7 +12,7 @@
 
 - (void)addVisualConstraint:(NSString *)constraintString forViews:(NSDictionary *)views;
 - (void)addVisualConstraints:(NSArray *)constraintsArray forViews:(NSDictionary *)views;
-- (void)verticallyCenterView:(UIView *)view;
+- (void)addConstraintToVerticallyCenterView:(UIView *)view;
 - (void)addConstraintToVerticallyCenterViews:(NSArray *)views;
 - (void)addConstraintToHorizontallyCenterView:(UIView *)view;
 - (void)addConstraintToHorizontallyCenterViews:(NSArray *)views;
