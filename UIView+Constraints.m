@@ -97,7 +97,7 @@
 													  constant:0]];
 }
 
-- (void)addConstraintsToMatchPositionAndSizeOfView(UIView *)firstView toPositionAndSizeOfView:(UIView *)secondView
+- (void)addConstraintsToMatchPositionAndSizeOfView:(UIView *)firstView toPositionAndSizeOfView:(UIView *)secondView
 {
 	[self addConstraintToAlignCenterOfView:firstView withView:secondView];
 	[self addConstraintToMatchHeightOfView:firstView toHeightOfView:secondView];
@@ -107,7 +107,7 @@
 - (void)addConstraintToAlignCenterOfView:(UIView *)firstView withView:(UIView *)secondView
 {
 	[self addConstraintToAlignHorizontalCenterOfView:firstView withView:secondView];
-	[self addConstraintToVerticallyCenterView:firstView withView:secondView];
+	[self addConstraintToAlignVerticalCenterOfView:firstView withView:secondView];
 }
 
 - (void)addConstraintToAlignBaselineOfView:(UIView *)firstView withView:(UIView *)secondView
