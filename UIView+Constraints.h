@@ -19,6 +19,7 @@
 - (void)addConstraintToMatchHeightToWidthForView:(UIView *)view;
 - (void)addConstraintToMatchWidthOfView:(UIView *)firstView toWidthOfView:(UIView *)secondView;
 - (void)addConstraintToMatchHeightOfView:(UIView *)firstView toHeightOfView:(UIView *)secondView;
+- (void)addConstraintsToMatchPositionAndSizeOfView:(UIView *)firstView toPositionAndSizeOfView:(UIView *)secondView;
 - (void)addConstraintToAlignCenterOfView:(UIView *)firstView withView:(UIView *)secondView;
 - (void)addConstraintToAlignBaselineOfView:(UIView *)firstView withView:(UIView *)secondView;
 - (void)addConstraintToAlignBottomOfView:(UIView *)firstView withView:(UIView *)secondView;
