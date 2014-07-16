@@ -97,6 +97,19 @@
 													  constant:0]];
 }
 
+- (void)addConstraintsToMatchPositionAndSizeOfView(UIView *)firstView toPositionAndSizeOfView:(UIView *)secondView
+{
+	[self addConstraintToAlignCenterOfView:firstView withView:secondView];
+	[self addConstraintToMatchHeightOfView:firstView toHeightOfView:secondView];
+	[self addConstraintToMatchWidthOfView:firstView toWidthOfView:secondView];
+}
+
+- (void)addConstraintToAlignCenterOfView:(UIView *)firstView withView:(UIView *)secondView
+{
+	[self addConstraintToAlignHorizontalCenterOfView:firstView withView:secondView];
+	[self addConstraintToVerticallyCenterView:firstView withView:secondView];
+}
+
 - (void)addConstraintToAlignBaselineOfView:(UIView *)firstView withView:(UIView *)secondView
 {
 	[self addConstraint: [NSLayoutConstraint constraintWithItem:firstView
@@ -104,6 +117,17 @@
 													  relatedBy:NSLayoutRelationEqual
 														 toItem:secondView
 													  attribute:NSLayoutAttributeBaseline
+													 multiplier:1.0
+													   constant:0.0]];
+}
+
+- (void)addConstraintToAlignBottomOfView:(UIView *)firstView withView:(UIView *)secondView
+{
+	[self addConstraint: [NSLayoutConstraint constraintWithItem:firstView
+													  attribute:NSLayoutAttributeBottom
+													  relatedBy:NSLayoutRelationEqual
+														 toItem:secondView
+													  attribute:NSLayoutAttributeBottom
 													 multiplier:1.0
 													   constant:0.0]];
 }
